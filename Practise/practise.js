@@ -12,21 +12,30 @@
 //     phone: "S24 Ultra",
 // }
 
-// if (info.age == prompt("write smth else", "")) {
-//     console.log(info.age);   
-// } else {
+// let questions = {
+//     myname: "myname",
+//     born: "born",
+//     age: "age",
+//     job: "job",
+// }
+
+// const about = prompt("ask me", "")
+
+// if (about == questions.myname) {
+//     console.log(info.myname);   
+// }
+// else if (about == "born") {
+//     console.log(info.born);
+// }
+// else if (about == "age") {
+//     console.log(info.age);
+// } 
+// else if (about == "job") {
+//     console.log(info.job);
+// }
+// else {
 //     console.log("write correctly");
 // }
-
-// let tanlash = prompt("tanla", "");
-
-// if (tanlash == myname) {
-//     console.log(myname);
-// } else {
-//     console.log("to'g'ri javob yozing");
-// }
-
-
 
 
 
@@ -40,7 +49,8 @@
 
 
 const brands = ["nissan", 13, "toyota", 719, "mercedes-benz", '056', "bmw"]
-
+const answer = 
+console.log();
 
 
 
@@ -80,6 +90,21 @@ const brands = ["nissan", 13, "toyota", 719, "mercedes-benz", '056', "bmw"]
 
 
 
+
+
+// const myplace = prompt("where are you now?")
+
+// if (myplace == "home") {
+//     console.log("let's go to a park");    
+// }
+
+// else if (myplace == "work") {
+//     console.log("when will you finish?");
+// } 
+
+// else {
+//     console.log("oh i see");
+// }
 
 
 
