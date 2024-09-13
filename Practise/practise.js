@@ -39,29 +39,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-const brands = ["nissan", 13, "toyota", 719, "mercedes-benz", '056', "bmw"]
-const answer = 
-console.log();
-
-
-
-
-
-
-
-
-
-
-
+// const brands = ["nissan", 13, "toyota", 719, "mercedes-benz", '056', "bmw"]
+// const answer = 
+// console.log();
 
 
 
@@ -86,12 +66,6 @@ console.log();
 
 
 
-
-
-
-
-
-
 // const myplace = prompt("where are you now?")
 
 // if (myplace == "home") {
@@ -108,13 +82,7 @@ console.log();
 
 
 
-
-
-
-
-
-
-
-
-
 // console.log(`My name is ${user}.`, `I am a ${job}`);
+
+
+
