@@ -17,11 +17,14 @@
 //     born: "born",
 //     age: "age",
 //     job: "job",
+//     car: "car",
+//     pc: "pc",
+//     phone: "phone"
 // }
 
 // const about = prompt("ask me", "")
 
-// if (about == questions.myname) {
+// if (about == "myname") {
 //     console.log(info.myname);   
 // }
 // else if (about == "born") {
@@ -32,6 +35,15 @@
 // } 
 // else if (about == "job") {
 //     console.log(info.job);
+// }
+// else if (about == "car") {
+//     console.log(info.car);
+// }
+// else if (about == "pc") {
+//     console.log(info.pc);
+// }
+// else if (about == "phone") {
+//     console.log(info.phone);
 // }
 // else {
 //     console.log("write correctly");
