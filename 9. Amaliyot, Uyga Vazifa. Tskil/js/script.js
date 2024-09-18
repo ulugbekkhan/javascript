@@ -1,28 +1,27 @@
 "use strict";
 
 
-let numberOfSeries = prompt("Nechta o'yin ko'rdingiz?", )
+let numberOfSeries = prompt("Nechta serial ko'rdingiz?", )
 
 let seriesDB = {
 
     count: numberOfSeries,
 
-    series: {
-        seriesAnswer: String,
-        seriesMark: String
-    },
+    series: {},
 
     actors: {},
 
     genres: [],
 
-    privat: Boolean(false)
+    private: Boolean(false)
 }
 
-let lastSerial = prompt("Oxirgi ko'rgan serialingiz?", "")
-let yourMark = prompt("Nechi baxo berasiz?", "")
+let a = prompt("Oxirgi ko'rgan serialingiz?", ""),
+b = prompt("Nechi baxo berasiz?", ""),
+c = prompt("Oxirgi ko'rgan serialingiz?", ""),
+d = prompt("Nechi baxo berasiz?", "")
 
-seriesDB.series.seriesAnswer = lastSerial;
-seriesDB.series.seriesMark = yourMark;
+seriesDB.series[a] = b;
+seriesDB.series[c] = d;
 
 console.log(seriesDB);
