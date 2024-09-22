@@ -36,6 +36,7 @@ const calculation = (g, h) => g + h;
 console.log(calculation(10, 3));
 
 
+
 const newcalc = (w) => {
     console.log("!");
     return w;
