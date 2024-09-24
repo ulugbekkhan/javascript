@@ -6,7 +6,7 @@ const user = "Ulugbek";
 
 console.log(user.length);
 
-const arr = [1, 2, 3, 4];
+const arr = [0, 1, 2, 3, 4];
 
 console.log(arr.length);
 

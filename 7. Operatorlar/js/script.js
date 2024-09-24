@@ -2,6 +2,7 @@
 
 
 
+console.log(6 + "abdusamatov");
 console.log(6 + + "abdusamatov");
 
 console.log(6 + "7");

@@ -1,19 +1,17 @@
 "use strict";
 
 
-
 let numberOfSeries = prompt("Nechta serial ko'rdingiz?", )
 
-if (numberOfSeries > 10) {
+if (numberOfSeries >= 10) {
     console.log("Siz serialchi zvezda ekansiz");
 }
-else if (numberOfSeries > 5) {
+else if (numberOfSeries >= 5) {
     console.log("Siz klassik tomoshabin ekansiz");
 } 
 else {
     console.log("Siz kam serial ko'ribsiz");
 }
-
 
 
 let seriesDB = {
@@ -30,12 +28,9 @@ let seriesDB = {
 }
 
 
-
 let sample = 1;
 let a = "";
 let b = "";
-
-
 
 while (sample < 3) {
 
@@ -56,7 +51,6 @@ while (sample < 3) {
     }
 
 
-
     b = prompt("Nechi baxo berasiz?", "");
 
     if (b === null) {
@@ -74,7 +68,5 @@ while (sample < 3) {
         b = "";
     }
 }
-
-
 
 console.log(seriesDB);

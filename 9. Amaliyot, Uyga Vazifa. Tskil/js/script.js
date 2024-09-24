@@ -1,7 +1,7 @@
 "use strict";
 
 
-let numberOfSeries = prompt("Nechta serial ko'rdingiz?", )
+let numberOfSeries = prompt("Nechta serial ko'rdingiz?", );
 
 let seriesDB = {
 

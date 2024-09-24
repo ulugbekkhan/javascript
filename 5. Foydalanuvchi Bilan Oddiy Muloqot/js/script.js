@@ -2,7 +2,7 @@
 
 
 
-alert("Hello Ulugbek")
+alert("Hello Ulugbek");
 
 
 
@@ -22,6 +22,7 @@ console.log(currentPlace);
 console.log(typeof currentPlace);
 
 
+
 // agar prompt ni oldiga "+" belgisini qo'ysak,
 // string type ni number type ga o'zgartiradi
 
@@ -36,7 +37,7 @@ console.log(typeof subtraction);
 
 
 const favoriteFood = ["chuchvara", "manti", "somsa"]
-console.log(favoriteFood);
+console.log(favoriteFood[2]);
 
 const favoriteGames = []
 favoriteGames[0] = "DOTA 2"
@@ -57,7 +58,7 @@ let car = {
     model: String,
     horsepower: Number
 }
-
+console.log(car);
 car.color = "Black"
 car.model = "Mustang"
 car.horsepower = 700

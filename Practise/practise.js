@@ -98,9 +98,9 @@
 
 
 
-let sample = 10;
+// let sample = 10;
 
-while (sample < 30) {
-    console.log(sample);
-    sample++;
-}
+// while (sample < 30) {
+//     console.log(sample);
+//     sample++;
+// }
