@@ -25,7 +25,10 @@ function showDB () {
 
     const permission = confirm("Savollarga javob berasizmi?")
 
-    if (permission == true) {
+    if (permission != true) {
+        console.log("Hidden");
+        return
+    }
 
         startApp();
         
@@ -34,8 +37,6 @@ function showDB () {
         writeGenres();
 
         console.log(seriesDB);
-    } 
-    else console.log("Hidden");
 
 }
 

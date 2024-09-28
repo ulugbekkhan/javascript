@@ -18,7 +18,7 @@ console.log(user.toUpperCase());
 const uppercaseUser = user.toUpperCase();
 
 console.log(uppercaseUser);
-console.log(user);
+console(user);
 
 
 
