@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 // let info = {
 //     myname: "Ulugbek",
 //     born: 13022003,
