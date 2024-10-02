@@ -1,38 +1,39 @@
 "use strict";
 
 
-const openarray = [225, 34, 43, 348748437, 2, 873587398, 13, 89, 32];
+const openarray = [];
 const changearray = [];
-// let sonlarniKiritish;
+let sonlarniKiritish;
 let yangi = 0;
 
-// for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 20; i++) {
 
-//     sonlarniKiritish = prompt("Istalgan son kiriting");
+    sonlarniKiritish = +prompt("Istalgan son kiriting");
 
-//     openarray[i] = sonlarniKiritish;
+    openarray[i] = sonlarniKiritish;
     
-// }
-
+}
+console.log(openarray);
 
 for (let i = 0; i < openarray.length; i++) {
 
-    let changednumberofindex = 0;
-
     let olingannumber = openarray[i];
 
-    for (let g = 1; g < openarray.length; g++) {
+    let changednumberofindex = i;
+
+    for (let g = 0; g < openarray.length; g++) {
 
         if (olingannumber < openarray[g] || openarray[g] === "") {
+
         }
         else {
             olingannumber = openarray[g]
             changednumberofindex = g;
         }
-
     }
 
-    if (olingannumber === "") {    
+    if (olingannumber === "") {   
+
     }
     else {
         changearray[yangi] = olingannumber;
@@ -46,8 +47,6 @@ for (let i = 0; i < openarray.length; i++) {
     else if (changearray.length != openarray.length && i == openarray.length-1) {
         i = -1;
     }
-    
 }
 
-// console.log(openarray);
 console.log(changearray);

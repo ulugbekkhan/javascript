@@ -23,6 +23,8 @@ console(user);
 
 
 const greeting = "Hello World";
+let ser = greeting.includes("World")
+console.log(ser);
 
 console.log(greeting.indexOf("r"));
 
