@@ -1,52 +1,53 @@
 "use strict";
 
 
-const openarray = [];
-const changearray = [];
-let sonlarniKiritish;
-let yangi = 0;
+const eskiArray = [];
+const yangiArray = [];
+let promptJavoblari;
+let indexYangiArray = 0;
 
 for (let i = 0; i < 20; i++) {
 
-    sonlarniKiritish = +prompt("Istalgan son kiriting");
+    promptJavoblari = +prompt("Istalgan son kiriting");
 
-    openarray[i] = sonlarniKiritish;
-    
+    eskiArray[i] = promptJavoblari;
+
 }
-console.log(openarray);
 
-for (let i = 0; i < openarray.length; i++) {
+console.log(yangiArray);
 
-    let olingannumber = openarray[i];
+for (let i = 0; i < eskiArray.length; i++) {
 
-    let changednumberofindex = i;
+    let tanlanganSon = eskiArray[i];
 
-    for (let g = 0; g < openarray.length; g++) {
+    let indexEskiArray = i;
 
-        if (olingannumber < openarray[g] || openarray[g] === "") {
+    for (let u = 0; u < eskiArray.length; u++) {
 
+        if (tanlanganSon < eskiArray[u] || eskiArray[u] === "") {
+            
         }
         else {
-            olingannumber = openarray[g]
-            changednumberofindex = g;
+            tanlanganSon = eskiArray[u];
+            indexEskiArray = u;
         }
     }
 
-    if (olingannumber === "") {   
+    if (tanlanganSon === "") {
 
     }
     else {
-        changearray[yangi] = olingannumber;
-        openarray[changednumberofindex] = "";
-        yangi++;
+        yangiArray[indexYangiArray] = tanlanganSon;
+        eskiArray[indexEskiArray] = "";
+        indexYangiArray++;
     }
 
-    if (changearray.length === openarray.length) {
+    if (eskiArray.length === yangiArray.length) {
         break;
     }
-    else if (changearray.length != openarray.length && i == openarray.length-1) {
+    else if (eskiArray.length != yangiArray.length && i == eskiArray.length-1) {
         i = -1;
-    }
+    }   
 }
 
-console.log(changearray);
+console.log(yangiArray);

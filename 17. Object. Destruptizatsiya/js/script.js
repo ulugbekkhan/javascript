@@ -13,11 +13,11 @@ const theif = {
     },
 };
 
-theif.how_out();
+// theif.how_out();
 
-const { hair, style } = theif.colors;
-console.log(hair);
-console.log(style);
+// const { hair, style } = theif.colors;
+// console.log(hair);
+// console.log(style);
 
 // delete theif.jacket;
 // console.log(theif);
