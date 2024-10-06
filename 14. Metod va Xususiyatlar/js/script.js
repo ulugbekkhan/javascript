@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 const user = "Ulugbek";
 
 console.log(user.length);
@@ -18,13 +17,13 @@ console.log(user.toUpperCase());
 const uppercaseUser = user.toUpperCase();
 
 console.log(uppercaseUser);
-console(user);
+console.log(user);
 
 
 
 const greeting = "Hello World";
-let ser = greeting.includes("World")
-console.log(ser);
+let is_correct = greeting.includes("World")
+console.log(is_correct);
 
 console.log(greeting.indexOf("r"));
 

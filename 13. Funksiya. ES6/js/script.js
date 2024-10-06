@@ -1,5 +1,6 @@
 "use strict";
 
+
 function isjuft (number) {
     if (number % 2 == 0) {
         return true;
@@ -7,7 +8,6 @@ function isjuft (number) {
     else return false;
 }
 console.log(isjuft(22));
-
 
 let isjuftqayt = isjuft(23);
 console.log(isjuftqayt);
@@ -50,3 +50,4 @@ const newcalc = (w) => {
     console.log("!");
     return w;
 }
+console.log(newcalc(7));

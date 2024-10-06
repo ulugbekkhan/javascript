@@ -1,5 +1,6 @@
 "use strict";
 
+
 const channel = prompt("What's your favorite YouTube channel?")
 console.log("https://youtube.com/" + channel + "/videos");
 // console.log(`https://youtube.com/${channel}`);

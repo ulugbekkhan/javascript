@@ -1,0 +1,82 @@
+1. Ichma-ich massivni tekis qilish.
+
+Massiv ichida joylashgan massivni qabul qiladigan va barcha
+elementlarini bitta tekis massivga qaytaradigan funksiya yozing.
+
+function flattenArray(arr) {
+    // Kodingiz shu yerga
+}
+
+console.log(flattenArray([1, [2, [3, 4], 5], 6])); 
+// Natija: [1, 2, 3, 4, 5, 6]
+
+
+
+2. Obyekt: Obyektlarni bitta xususiyat bo'yicha guruhlash.
+
+Funksiya yozing, u obyektlar massivini qabul qiladi va ularni
+ko'rsatilgan xususiyat bo'yicha guruhlaydi.
+Natijada, obyektning kalitlari (property) - xususiyat qiymatlari,
+qiymatlar esa obyektlar massivi bo'lishi kerak.
+
+function groupBy(arr, key) {
+    // Kodingiz shu yerda
+}
+
+const users = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 25 },
+    { name: "David", age: 30 }
+];
+
+console.log(groupBy(users, "age"));
+// Natija: { 25: [{name: "Alice", age: 25}, {name: "Charlie", age: 25}], 
+//           30: [{name: "Bob", age: 30}, {name: "David", age: 30}] }
+
+
+
+3. Birinchi qaytarilmayotgan belgini topish.
+
+Funksiya yozing, u qatorni qabul qiladi va qaytarilmayotgan birinchi
+belgini qaytaradi. Agar barcha belgilar takrorlansa, null ni qaytaring.
+
+function firstNonRepeatingCharacter(str) {
+    // Kodingiz shu yerda
+}
+
+console.log(firstNonRepeatingCharacter("aabccdbd")); // Natija: "b"
+console.log(firstNonRepeatingCharacter("aabbcc"));   // Natija: null
+
+
+
+4. Obyekt: Obyektni chuqur nusxalash.
+
+Ichma-ich joylashgan obyektning chuqur nusxasini yaratadigan funksiya
+yozing.Bunda ichki obyektlar ham nusxalangan bo'lishi kerak va ularga
+faqatgina murojaat qilinmasligi kerak.
+
+function deepClone(obj) {
+    // Kodingiz shu yerda
+}
+
+const original = { name: "Alice", address: { city: "Wonderland" } };
+const copy = deepClone(original);
+copy.address.city = "New City";
+
+console.log(original.address.city); // Natija: "Wonderland"
+console.log(copy.address.city);     // Natija: "New City"
+
+
+
+5. Ikki tartiblangan massivni birlashtirish.
+
+Funksiya yozing, u ikkita tartiblangan massivni qabul qiladi va hech qanday
+ichki tartiblashusulidan foydalanmay,bitta tartiblangan massivga birlashtiradi.
+
+function mergeSortedArrays(arr1, arr2) {
+    // Kodingiz shu yerda
+}
+
+console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); 
+// Natija: [1, 2, 3, 4, 5, 6]

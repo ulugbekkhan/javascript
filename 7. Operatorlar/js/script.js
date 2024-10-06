@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 console.log(6 + "abdusamatov");
 console.log(6 + + "abdusamatov");
 
@@ -12,14 +11,14 @@ console.log(6 + + "7");
 
 
 
-let eto = 10; //increment
-let ken = 10; //decrement
+let ken = 10; //increment
+let eto = 10; //decrement
 
-eto++;
-ken--;
+ken++;
+eto--;
 
-console.log(eto);
 console.log(ken);
+console.log(eto);
 
 
 

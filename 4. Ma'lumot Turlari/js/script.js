@@ -1,7 +1,8 @@
 "use strict";
 
+
 // JavaScript Data Types
-// Primitive - Boolean, Null, Undefined, Number, String, Symbol
+// Primitive - String, Number, Boolean, Null, Undefined, Symbol
 // Object - Array, Object, Function, RegEx, Date
 
 

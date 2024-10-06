@@ -2,10 +2,7 @@
 
 
 function first(cb) {
-    setTimeout(() => {
-        console.log(1);
-        cb();
-    }, 1000);
+    setTimeout(() => { console.log(1); cb(); }, 1000);
 }
 
 function second() {

@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 alert("Hello Ulugbek");
 
 
@@ -58,7 +57,9 @@ let car = {
     model: String,
     horsepower: Number
 }
+
 console.log(car);
+
 car.color = "Black"
 car.model = "Mustang"
 car.horsepower = 700

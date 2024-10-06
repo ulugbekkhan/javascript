@@ -27,7 +27,7 @@
 
 //uchinchi yo'li
 
-for (let i = 1; i <= 30; i++) {
+for (let i = 1; i <= 20; i++) {
     console.log(i);
 }
 
@@ -35,7 +35,7 @@ for (let i = 1; i <= 30; i++) {
 
 let num = 10;
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 11; i++) {
     console.log(num);
     num++;
 }
