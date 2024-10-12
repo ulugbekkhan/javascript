@@ -3,8 +3,8 @@
 
 const adv = document.querySelectorAll(`.promo__adv img`),
 wrapper = document.querySelector(`.promo__bg`),
-genre = document.querySelector(`.promo__genre`),
-seriesList = document.querySelectorAll(`.promo__interactive-item`)
+genre = wrapper.querySelector(`.promo__genre`),
+seriesList = document.querySelector(`.promo__interactive-list`)
 
 
 const seriesDB = {
@@ -17,15 +17,20 @@ const seriesDB = {
     ]
 }
 
-
-adv.forEach(item => {
+adv.forEach((item) => {
     item.remove()
-});
+})
 
-wrapper.style.backgroundImage = `url("./img/1.jpg")`
+genre.textContent = 'Comedy'
 
-genre.textContent = "Comedy"
+wrapper.style.backgroundImage = 'url("img/1.jpg")'
 
-for (let i = 0; i < seriesList.length; i++) {
-    seriesList[i].textContent = (`${i + 1} - `) + seriesDB.series[i]
-}
+seriesList.innerHTML = ""
+
+seriesDB.series.forEach((item, idx) => {
+    seriesList.innerHTML += `
+        <li class="promo__interactive-item">${idx + 1} ${item}
+            <div class="delete"></div>
+        </li>
+    `
+})
