@@ -1,42 +1,92 @@
 "use strict";
 
 
-const adv = document.querySelectorAll(`.promo__adv img`),
-wrapper = document.querySelector(`.promo__bg`),
-genre = wrapper.querySelector(`.promo__genre`),
-seriesList = document.querySelectorAll(`.promo__interactive-item`),
-addForm = document.querySelector(`form.add`),
-inputVal = addForm.querySelector(`.adding__input`)
-// checkbox = addForm.querySelector("[type=`checkbox`]")
+document.addEventListener('DOMContentLoaded', () => {
 
-const seriesDB = {
-    series: [
-        `Naruto`,
-        `Kimetsu no Yaiba`,
-        `Tokyo Ghoul`,
-        `Death Note`,
-        `Jujutsu Kaisen`
-    ]
-}
-seriesDB.series.sort();
+    const adv = document.querySelectorAll('.promo__adv img'),
+    wrapper = document.querySelector('.promo__bg'),
+    genre = wrapper.querySelector('.promo__genre'),
+    seriesList = document.querySelector('.promo__interactive-list'),
+    addForm = document.querySelector('form.add'),
+    inputVal = addForm.querySelector('.adding__input'),
+    checkbox = addForm.querySelector("[type='checkbox']")
+    
 
-
-adv.forEach((item) => {
-    item.remove()
-});
+    const seriesDB = {
+        series: [
+            'Naruto',
+            'Kimetsu no Yaiba',
+            'Tokyo Ghoul',
+            'Death Note',
+            'Jujutsu Kaisen'
+        ],
+    }
 
 
-genre.textContent = "Comedy"
+    addForm.addEventListener('submit', (event) => {
+        event.preventDefault()
+
+        let newSeries = inputVal.value
+        const favorite = checkbox.checked
+
+        if (newSeries) {
+            if (newSeries.length > 18) {
+                newSeries = `${newSeries.substring(0, 18)}...`
+            }
+            if (favorite) {
+                console.log("Sevimgli serial qo'shildi");
+            }
+            seriesDB.series.push(newSeries)
+            sortArr(seriesDB.series)
+            createSeriesList(seriesDB.series, seriesList)
+        }
+
+        event.target.reset()
+    })
+    
+    
+    const deleteAdv = (arr) => {
+        adv.forEach((item) => {
+            item.remove()
+        })
+    }
+    
+
+    const makeChange = () => {
+        genre.textContent = 'Comedy'
+        
+        wrapper.style.backgroundImage = 'url("img/1.jpg")'
+    }
+    
+
+    const sortArr = (arr) => {
+        arr.sort()
+    }
+  
+    
+    function createSeriesList (series, parent) {
+        parent.innerHTML = ""
+        series.forEach((item, idx) => {
+            parent.innerHTML += `
+            <li class="promo__interactive-item">${idx + 1} ${item}
+                <div class="delete"></div>
+            </li>
+            `
+        })
+
+        document.querySelectorAll('.delete').forEach((trash, idx) => {
+            trash.addEventListener('click', () => {
+                trash.parentElement.remove()
+                seriesDB.series.splice(idx, 1)
+                createSeriesList(series, parent)
+            })
+        })
+    }
 
 
-wrapper.style.backgroundImage = `url("./img/1.jpg")`
+    sortArr(seriesDB.series)
+    deleteAdv(adv)
+    makeChange()
+    createSeriesList(seriesDB.series, seriesList)
 
-
-for (let i = 0; i < seriesDB.series.length; i++) {
-    seriesList[i].textContent = (`${i + 1} - `) + seriesDB.series[i]
-}
-
-
-addForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-});
+})
