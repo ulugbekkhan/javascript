@@ -1,34 +1,36 @@
 "use strict";
 
 
-const calc = [1, 2, 3]
+// Spread
 
-function logger (x, y, z) {
-    console.log(x + y + z);
-}
+// const calc = [1, 2, 3]
 
-logger(calc);
-logger(...calc);
+// function logger (x, y, z) {
+//     console.log(x + y + z);
+// }
 
-
-
-const arr = ["x", "y"]
-
-const new_arr = [...arr]
-
-console.log(arr);
+// logger(calc);
+// logger(...calc);
 
 
+// Spread klonlash
 
-const numbers = {
-    x: 1,
-    y: 2,
-}
+// const arr = ["x", "y"]
 
-const new_numbers = { ...numbers }
+// const new_arr = [...arr]
 
-new_numbers.x = 10;
-new_numbers.y = 20;
+// console.log(arr);
 
-console.log(numbers);
-console.log(new_numbers);
+
+// const numbers = {
+//     x: 1,
+//     y: 2,
+// }
+
+// const new_numbers = { ...numbers }
+
+// new_numbers.x = 10;
+// new_numbers.y = 20;
+
+// console.log(numbers);
+// console.log(new_numbers);

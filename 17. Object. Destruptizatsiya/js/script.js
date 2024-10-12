@@ -15,13 +15,15 @@ const theif = {
 
 // theif.how_out();
 
-// const { hair, style } = theif;
-// console.log(hair);
-// console.log(style);
-
 
 // delete theif.jacket;
 // console.log(theif);
+
+
+// Destruptizatsiya
+// const { hair, style } = theif;
+// console.log(hair);
+// console.log(style);
 
 
 // console.log(Object.values(theif));

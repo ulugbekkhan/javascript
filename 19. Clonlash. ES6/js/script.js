@@ -31,18 +31,12 @@
 // const numbers = {
 //     x: 1,
 //     y: 2,
-//     z: {
-//         a: 3,
-//         b: 4,
-//     },
 // }
 
 // const new_numbers = nusxa(numbers)
 
 // new_numbers.x = 10
 // new_numbers.y = 20
-// new_numbers.z.a = 30
-// new_numbers.z.b = 40
 
 // console.log(numbers);
 // console.log(new_numbers);
@@ -54,18 +48,12 @@
 // const numbers = {
 //     x: 1,
 //     y: 2,
-//     z: {
-//         a: 3,
-//         b: 4,
-//     },
 // }
 
 // const new_numbers = Object.assign({}, numbers)
 
 // new_numbers.x = 10;
 // new_numbers.y = 20;
-// new_numbers.z.a = 30;
-// new_numbers.z.b = 40;
 
 // console.log(numbers);
 // console.log(new_numbers);
@@ -83,11 +71,11 @@
 //     },
 // }
 
-// const add_number = {
+// const add_numbers = {
 //     z: 7
 // }
 
-// const all_numbers = Object.assign(add_number, numbers)
+// const all_numbers = Object.assign(numbers, add_numbers)
 
 // console.log(all_numbers);
 
@@ -100,8 +88,9 @@
 // const arr = [1, 2, 3];
 
 // const numbers = arr.slice();
+// // const numbers = arr.slice(0, 1); // ham klonlaydi ham kerakli elementlarni kesib oladi
 
-// numbers[1] = "myname";
+// numbers[1] = 7;
 
 // console.log(arr);
 // console.log(numbers);
@@ -110,9 +99,14 @@
 
 // // Spread
 
-// const liverpool = ["Salah", "Mane"]
+const liverpool = ["Salah", "Mane"]
+
+const new_players = [...liverpool]
+mix_players[0] = "Naruto"
+mix_players[1] = "Sasuke"
+
 // const mancity = ["Mahrez"]
+// const mix_players = [...liverpool, ...mancity] // ham klonlaydi ham arraylarni qo'shadi
 
-// const mix_players = [...liverpool, ...mancity]
-
-// console.log(mix_players);
+console.log(liverpool);
+console.log(new_players);
