@@ -47,7 +47,7 @@ console.log(calculation(10, 3));
 
 
 const newcalc = (w) => {
-    console.log("!");
+    console.log("u");
     return w;
 }
 console.log(newcalc(7));

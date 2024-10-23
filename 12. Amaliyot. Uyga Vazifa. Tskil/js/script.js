@@ -24,7 +24,7 @@ let seriesDB = {
 
     genres: [],
 
-    private: Boolean(false)
+    private: Boolean(false),
 }
 
 

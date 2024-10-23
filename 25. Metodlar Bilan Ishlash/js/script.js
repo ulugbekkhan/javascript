@@ -35,9 +35,9 @@ const circleWrapper = document.querySelector(".circle__wrapper")
 
 
 
-const mycircle = document.createElement("div")
-mycircle.classList.add("circle") // add metodi class qo'shadi
-circleWrapper.append(mycircle)
+// const mycircle = document.createElement("div")
+// mycircle.classList.add("circle") // add metodi class qo'shadi
+// circleWrapper.append(mycircle)
 
 // circleWrapper.before(mycircle)
 // circleWrapper.after(mycircle)

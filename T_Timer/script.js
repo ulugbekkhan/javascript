@@ -172,10 +172,10 @@ startBtn.addEventListener('click', function() {
     console.log(h, m, s);
     if (h === 0 && m === 0 && s === 0) {
     }
-    else if (arr_hours[0] == 0&& arr_hours[1] == 0 && arr_minutes[0] == 0 && arr_minutes[1] == 0 && arr_seconds[0] == 0 && arr_seconds[1] == 0) {
+    else if (arr_hours[0] == 0 && arr_hours[1] == 0 && arr_minutes[0] == 0 && arr_minutes[1] == 0 && arr_seconds[0] == 0 && arr_seconds[1] == 0) {
     }
     else {
-        timer = setInterval(digits, 1);
+        timer = setInterval(digits, 100);
         digits();
     }
 });

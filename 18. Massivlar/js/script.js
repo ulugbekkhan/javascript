@@ -42,12 +42,12 @@ const arr = [21, 2, 43, 4, 85, 6];
 
 
 
-const movies = prompt("What's your favorite movies?");
+// const movies = prompt("What's your favorite movies?");
 
-const user_movies = movies.split(", ");
-user_movies.sort();
-console.log(user_movies);
-console.log(user_movies.join(" - "));
+// const user_movies = movies.split(", ");
+// user_movies.sort();
+// console.log(user_movies);
+// console.log(user_movies.join(" - "));
 
 
 

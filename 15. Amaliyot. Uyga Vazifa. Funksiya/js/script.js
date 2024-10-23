@@ -19,9 +19,6 @@ let seriesDB = {
 showDB();
 
 
-
-
-
 function showDB () {
 
     const permission = confirm("Savollarga javob berasizmi?")
@@ -42,7 +39,6 @@ function showDB () {
 }
 
 
-
 function startApp() {
         
     while (numberOfSeries == "" || numberOfSeries == null || isNaN(numberOfSeries)) {
@@ -52,7 +48,6 @@ function startApp() {
 
     detectLevelSeries();
 }
-
 
 
 function rememberMySeries () {
@@ -95,7 +90,6 @@ function rememberMySeries () {
         }
     }
 }
-
 
 
 function writeGenres () {

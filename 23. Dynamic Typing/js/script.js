@@ -21,7 +21,6 @@ console.log(typeof + "5");
 
 // 3
 console.log(typeof parseInt("7"));
-
 const age_number = parseInt(prompt("age"))
 
 
@@ -35,8 +34,6 @@ if (age) {
     console.log("g");
 }
 
-
 console.log(typeof Boolean("3"));
-
 
 console.log(typeof !!"3");

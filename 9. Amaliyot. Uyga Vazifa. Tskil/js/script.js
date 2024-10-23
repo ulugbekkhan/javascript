@@ -13,7 +13,7 @@ let seriesDB = {
 
     genres: [],
 
-    private: Boolean(false)
+    private: Boolean(false),
 }
 
 let a = prompt("Oxirgi ko'rgan serialingiz?", ""),

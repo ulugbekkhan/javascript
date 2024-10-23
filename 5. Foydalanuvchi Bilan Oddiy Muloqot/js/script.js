@@ -4,9 +4,7 @@
 alert("Hello Ulugbek");
 
 
-
 const place = confirm("Are you here?");
-
 
 
 if (place == true)
@@ -15,11 +13,9 @@ else
 console.log("The answer is Cancel");
 
 
-
 const currentPlace = prompt("Where are you?", "");
 console.log(currentPlace);
 console.log(typeof currentPlace);
-
 
 
 // agar prompt ni oldiga "+" belgisini qo'ysak,
@@ -32,7 +28,6 @@ console.log(typeof addition);
 const subtraction = +prompt("ayirish", "");
 console.log(subtraction - 100);
 console.log(typeof subtraction);
-
 
 
 const favoriteFood = ["chuchvara", "manti", "somsa"]
@@ -49,7 +44,6 @@ favoriteColor[0] = prompt("What is your favorite color? #1", "")
 favoriteColor[1] = prompt("What is your favorite color? #2", "")
 favoriteColor[2] = prompt("What is your favorite color? #3", "")
 console.log(`My favorite colors are ${favoriteColor}`);
-
 
 
 let car = {

@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const makeChange = () => {
         genre.textContent = 'Comedy'
-        
         wrapper.style.backgroundImage = 'url("img/1.jpg")'
     }
     

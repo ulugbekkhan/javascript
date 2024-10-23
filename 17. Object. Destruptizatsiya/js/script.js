@@ -34,17 +34,17 @@ const theif = {
 // object bilan ishlaganda for da in ishlatiladi
 // array bilan ishlaganda for da of ishlatiladi
 
-for (let key in theif) {
+// for (let key in theif) {
 
-    if (typeof theif[key] === "object") {
+//     if (typeof theif[key] === "object") {
 
-        for (let i in theif[key]) {
+//         for (let i in theif[key]) {
 
-            console.log(`Property ${key} has value ${theif[key] [i]}`);
-        }
-    }
-    else {
-        console.log(`${key} is ${theif[key]}`);
-    }
+//             console.log(`Property ${key} has value ${theif[key] [i]}`);
+//         }
+//     }
+//     else {
+//         console.log(`${key} is ${theif[key]}`);
+//     }
 
-}
+// }

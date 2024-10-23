@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 let seriesDB = {
     count: 0,  
     series: {},

@@ -1,25 +1,25 @@
 "use strict";
 
 
-function first(cb) {
-    setTimeout(() => { console.log(1); cb(); }, 1000);
-}
+// function first(cb) {
+//     setTimeout(() => { console.log(1); cb(); }, 1000);
+// }
 
-function second() {
-    console.log(2);
-}
+// function second() {
+//     console.log(2);
+// }
 
-first(second);
+// first(second);
 
 
 
-function edu(subject, callback) {
-    console.log(`I wanna teach ${subject}`);
-    callback();
-}
+// function edu(subject, callback) {
+//     console.log(`I wanna teach ${subject}`);
+//     callback();
+// }
 
-function done() {
-    console.log("That's great");
-}
+// function done() {
+//     console.log("That's great");
+// }
 
-edu("JavaScript", done);
+// edu("JavaScript", done);

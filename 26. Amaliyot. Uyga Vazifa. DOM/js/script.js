@@ -17,6 +17,7 @@ const seriesDB = {
     ]
 }
 
+
 adv.forEach((item) => {
     item.remove()
 })

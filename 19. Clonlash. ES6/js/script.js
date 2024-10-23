@@ -15,8 +15,6 @@
 
 
 
-
-
 // function nusxa (obj) {
     
 //     let obj_nusxa = {}
@@ -43,8 +41,6 @@
 
 
 
-
-
 // const numbers = {
 //     x: 1,
 //     y: 2,
@@ -57,8 +53,6 @@
 
 // console.log(numbers);
 // console.log(new_numbers);
-
-
 
 
 
@@ -81,14 +75,13 @@
 
 
 
-
-
 // Slice
+// ham klonlaydi ham kerakli elementlarni kesib oladi
 
 // const arr = [1, 2, 3];
 
 // const numbers = arr.slice();
-// // const numbers = arr.slice(0, 1); // ham klonlaydi ham kerakli elementlarni kesib oladi
+// // const numbers = arr.slice(0, 1);
 
 // numbers[1] = 7;
 
@@ -97,16 +90,16 @@
 
 
 
-// // Spread
+// Spread
+// ham klonlaydi ham arraylarni qo'shadi
 
-const liverpool = ["Salah", "Mane"]
+// const new_team_7 = ["Naruto", "Sasuke", "Sakura"]
 
-const new_players = [...liverpool]
-mix_players[0] = "Naruto"
-mix_players[1] = "Sasuke"
+// const new_sannin = [...new_team_7]
+// console.log(new_sannin);
 
-// const mancity = ["Mahrez"]
-// const mix_players = [...liverpool, ...mancity] // ham klonlaydi ham arraylarni qo'shadi
 
-console.log(liverpool);
-console.log(new_players);
+// const old_team_7 = ["Obito", "Kakashi", "Rin"]
+
+// const team_7_members = [...new_team_7, ...old_team_7]
+// console.log(team_7_members);

@@ -36,6 +36,7 @@ console.log(greeting.substring(6, 11));
 const num = 8.8;
 console.log(Math.round(num));
 
+
 const borderWidth = "13.8px"
 console.log(parseInt(borderWidth));
 console.log(parseFloat(borderWidth));
