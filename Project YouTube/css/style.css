@@ -1,0 +1,630 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+body {
+    background-color: white;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas:
+    "h h"
+    "n c"
+    "n c";
+    box-sizing: border-box;
+}
+
+
+/*   UPPER MENU   =============================================================================*/
+.upper-menu {
+    width: 100%;
+    height: 56px;
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.upper-menu-minimize {
+    width: 220px;
+    /* flex: 3; */
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+#minimize-icon {
+    width: 42px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 12px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: gray;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#minimize-icon:hover {
+    border-radius: 50%;
+    background-color: rgb(230, 230, 230);
+}
+.youtube-icon {
+    font-size: 27px;
+    cursor: pointer;
+    margin-left: 15px;
+    color: red;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background: none;
+}
+.youtube-icon-title {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+    color: black;
+}
+
+
+.upper-menu-search-div {
+    width: 670px;
+    /* flex: 10; */
+    height: 56px;
+    /* margin-right: 11px; */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.upper-menu-search-input-div {
+    width: 538px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: none;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border: .1px solid rgb(179, 179, 179);
+}
+.upper-menu-search-input {
+    width: 515px;
+    height: 26px;
+    font-size: 16px;
+    margin-left: 12px;
+    outline: none;
+    border: none;
+    color: black;
+}
+.upper-menu-search-input::placeholder {
+    font-size: 16px;
+    color: gray;
+}
+.upper-menu-search-icon {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-left: none;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border: .1px solid rgb(179, 179, 179);
+}
+.upper-menu-search-icon:hover {
+    background-color: rgb(230, 230, 230);
+}
+.upper-menu-search-voice {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 17px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+}
+.upper-menu-search-voice:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+
+.upper-menu-additional {
+    width: 140px;
+    /* flex: 2; */
+    height: 56px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.upper-menu-create, .upper-menu-notifications, .upper-menu-account {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper-menu-account {
+    background-color: rgb(230, 230, 230);
+}
+.upper-menu-create:hover, .upper-menu-notifications:hover, .upper-menu-account:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+
+/*   NAVBAR MINIMIZED   ========================================================================*/
+.navbar-minimized {
+    width: 64px;
+    height: 300px;
+    margin-left: 3px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.home-div-minimized, .shorts-div-minimized, .subscriptions-div-minimized, .you-div-minimized {
+    width: 64px;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.home-div-minimized:hover, .shorts-div-minimized:hover, .subscriptions-div-minimized:hover, .you-div-minimized:hover {
+    background-color: rgb(230, 230, 230);
+}
+.home-icon-minimized, .shorts-icon-minimized, .subscriptions-icon-minimized, .you-icon-minimized {
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+.you-icon-minimized {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.home-title-minimized, .shorts-title-minimized, .subscriptions-title-minimized, .you-title-minimized {
+    font-size: 10px;
+    color: black;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+
+/*   NAVBAR   ================================================================================*/
+.navbar {
+    width: 250px;
+    height: 583px;
+    grid-area: n;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.part-1 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    margin-left: 11px;
+    box-sizing: border-box;
+}
+.home-div, .shorts-div, .subscriptions-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.home-div {
+    background-color: rgb(230, 230, 230);
+}
+.shorts-div:hover, .subscriptions-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.home-icon, .shorts-icon, .subscriptions-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.home-title, .shorts-title, .subscriptions-title {
+    font-size: 14px;
+    margin-left: 24px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.navbar-hr {
+    width: 213px;
+    margin-top: 15px;
+}
+
+
+.part-2 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    margin-left: 11px;
+    box-sizing: border-box;
+}
+.you-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.you-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.you-title {
+    width: fit-content;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-left: 10px;
+    color: black;
+    box-sizing: border-box;
+}
+.you-icon {
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.history-div, .playlists-div, .your-videos-div, .your-movies-div, .watch-later-div, .liked-videos-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.history-div:hover, .playlists-div:hover, .your-videos-div:hover, .your-movies-div:hover, .watch-later-div:hover, .liked-videos-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.history-icon, .playlists-icon, .your-videos-icon, .your-movies-icon, .watch-later-icon, .liked-videos-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.history-title, .playlists-title, .your-videos-title, .your-movies-title, .watch-later-title, .liked-videos-title {
+    font-size: 14px;
+    margin-left: 24px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.part-3 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 12px;
+    box-sizing: border-box;
+}
+.part-3-subscriptions-title {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: black;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.all-subscriptions-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.all-subscriptions-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.all-subscriptions-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.all-subscriptions-title {
+    font-size: 14px;
+    margin-left: 24px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.part-4 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    margin-left: 11px;
+    box-sizing: border-box;
+}
+.explore-title {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.trending-div, .music-div, .live-div, .gaming-div, .news-div, .sport-div, .learning-div, .fashion-beauty-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.trending-div:hover, .music-div:hover, .live-div:hover, .gaming-div:hover, .news-div:hover, .sport-div:hover, .learning-div:hover, .fashion-beauty-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.trending-icon, .music-icon, .live-icon, .gaming-icon, .news-icon, .sport-icon, .learning-icon, .fashion-beauty-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.trending-title, .music-title, .live-title, .gaming-title, .news-title, .sport-title, .learning-title, .fashion-beauty-title {
+    font-size: 14px;
+    margin-left: 20px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.part-5 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    margin-left: 11px;
+    box-sizing: border-box;
+}
+.more-from-youtube-title {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.youtube-studio-div, .youtube-kids-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.youtube-studio-div:hover, .youtube-kids-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.youtube-studio-icon, .youtube-kids-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+    color: red;
+    outline: none;
+    border: none;
+    background: none;
+}
+.youtube-kids-icon{
+    transform: rotate(-7deg);
+}
+.youtube-studio-title, .youtube-kids-title {
+    font-size: 14px;
+    margin-left: 20px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.part-6 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    margin-left: 11px;
+    box-sizing: border-box;
+}
+.settings-div, .report-history-div, .help-div, .send-feedback-div {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.settings-div:hover, .report-history-div:hover, .help-div:hover, .send-feedback-div:hover {
+    background-color: rgb(230, 230, 230);
+}
+.settings-icon, .report-history-icon, .help-icon, .send-feedback-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.settings-title, .report-history-title, .help-title, .send-feedback-title {
+    font-size: 14px;
+    margin-left: 20px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+.part-7 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.guide-links-primary {
+    width: 170px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.guide-links-secondary {
+    width: 185px;
+    height: fit-content;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.class-guide-links {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.6;
+    text-decoration: none;
+    margin-right: 3px;
+    color: black;
+}
+#guide-link-nowrap {
+    white-space: nowrap;
+}
+.copyright {
+    width: fit-content;
+    height: fit-content;
+    font-size: 11px;
+    opacity: 0.5;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 3px;
+    color: black;
+}
+
+
+/* MAIN CONTENT =================================================================================*/
+.main-content {
+    width: 100%;
+    grid-area: c;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.feeds-filter {
+    width: 1099px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.feeds-names {
+    width: 100%;
+    height: 40px;
+    flex: 25;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.feed {
+    width: fit-content;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 16px;
+    margin-right: 12px;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(230, 230, 230);
+    box-sizing: border-box;
+}
+.feed:last-child {
+    margin-right: 0;
+}
+.feeds-button-left, .feeds-button-right {
+    /* flex: 1; */
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feeds-button-left:hover, .feeds-button-right:hover {
+    background-color: rgb(230, 230, 230);
+}
+.feeds-button-left {
+    display: none;
+}

@@ -16,7 +16,7 @@ function logger(a, b) {
 logger(1, 2)
 
 
-// 2 // context objectni ichidagi metod objectni o'ziga teng
+// 2 // context this - objectni ichidagi metod objectni o'ziga teng
 const obj = {
     x: 10,
     y: 15,
@@ -27,7 +27,7 @@ const obj = {
 obj.sum()
 
 
-// 3 // context this funksiya konstruktorda yangi yangi objectni nusxasiga teng
+// 3 // context this function constructorda yangi objectni nusxasiga teng
 function Car(name, color) {
     this.name = name
     this.color = color

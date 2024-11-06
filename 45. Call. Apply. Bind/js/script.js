@@ -3,21 +3,32 @@
 
 // call, apply
 
-function logger(speed) {
-    console.log(this);
-    console.log(`My car is ${this.name}. It's color is ${this.color}. Max speed is ${speed}`);
-}
-
-const car = {
-    name: 'Merc',
-    color: 'Black'
-}
-
-logger.call(car, 300)
-logger.apply(car, [300])
+// function logger() {
+//     console.log(this);
+// }
+// const car = {
+//     name: 'BMW',
+//     color: 'Black'
+// }
+// logger.call(car)
+// logger()
 
 
-// bind
+// function logger(speed) {
+//     console.log(this);
+//     console.log(`My car is ${this.name}. It's color is ${this.color}. Max speed is ${speed}`);
+// }
+
+// const car = {
+//     name: 'Merc',
+//     color: 'Black'
+// }
+
+// logger.call(car, 300)
+// logger.apply(car, [300])
+
+
+// bind // yangi function qaytaradi
 
 // function calc(number) {
 //     return this * number
@@ -38,26 +49,31 @@ logger.apply(car, [300])
 // })
 
 
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-btn.addEventListener('click', function() {
-    this.style.width = '200px'
-})
-// btn.addEventListener('click', (e) => {
-//     e.target.style.width = '200px'
+// btn.addEventListener('click', function() {
+//     this.style.width = '200px'
 // })
+// // btn.addEventListener('click', (e) => {
+// //     e.target.style.width = '200px'
+// // })
 
-const obj = {
-    x: 10,
-    y: 15,
-    sum: function() {
-        const logger = () => {
-            console.log(this);
-        }
-        logger()
-    },
-}
-obj.sum()
+
+// const obj = {
+//     x: 10,
+//     y: 15,
+//     sum: function() {
+//         const logger = () => {
+//             console.log(this);
+//             console.log(this.x);
+//         }
+//         logger()
+//     },
+// }
+// obj.sum()
 
 // strelkali function hech qanday contextga ega emas
 // u xar doim o'zini tepasidagi contextga qaram bo'ladi
+
+// const calc = (a) => a + 10
+// console.log(calc(10));
